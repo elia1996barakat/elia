@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: sans-serif;
+}
+body{
+    background-color: #001;
+}
+.img-box{
+width: 50px;
+height: 50px;
+border-radius: 50%;
+overflow: hidden;
+border: 3px solid white;
+flex-shrink: 0;
+}
+.img-box img{
+    width: 100%;
+}
+.profail {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.profail h2{
+    font-size: 30px;
+    text-transform: capitalize;
+}
+.profail h2:hover{
+    color: #00abfe;
+}
+.Social {   
+    position: absolute;
+    bottom: 90px;
+    width: 210px;
+    display: flex;
+    justify-content: space-between;  
+}
+   .Social a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 3px solid #00abfe;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #00abfe;
+    text-decoration: none;
+    align-items: center;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+ }
+ .Social a:hover{
+    color: #123;
+ }
+.Social a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #00abfe;
+    z-index: -1;
+    transition: .5s;
+}
+.Social a:hover:before{
+width: 100%;
+}
+.menu{
+    background-color: #123;
+    width: 60px;
+    height: 100vh;
+    padding: 20px;
+    overflow: hidden;
+    transition: .5s;
+}
+.menu:hover{
+    width: 260px;
+}
+ul{
+    list-style: none;
+    position: relative;
+    height: 95%;
+}
+ul li a{   
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    transition: .5s;
+}
+ul li a:hover, .active{
+    background-color: #00abfe;
+}
+.log-out{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    transition: .5s;
+}
+.log-out a i{
+    color: red;
+}
+.i:hover{
+color: white;
+}
+.log-out a:hover  { 
+background-color: red;
+}
+ul li a i{
+    font-size: 30px;
+}
